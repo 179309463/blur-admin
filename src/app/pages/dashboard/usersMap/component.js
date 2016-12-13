@@ -6,14 +6,14 @@
   'use strict';
 
   angular.module('BlurAdmin.pages.dashboard')
-      .directive('blurFeed', blurFeed);
+      .directive('dashboardMap', dashboardMap);
 
   /** @ngInject */
-  function blurFeed() {
+  function dashboardMap() {
     return {
       restrict: 'E',
-      controller: 'BlurFeedCtrl',
-      templateUrl: 'app/pages/dashboard/blurFeed/template.html'
+      controller: 'DashboardMapCtrl',
+      templateUrl: 'app/pages/dashboard/usersMap/template.html'
     };
   }
 })();

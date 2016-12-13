@@ -6,14 +6,14 @@
   'use strict';
 
   angular.module('BlurAdmin.pages.dashboard')
-      .directive('dashboardMap', dashboardMap);
+      .directive('dashboardPieChart', dashboardPieChart);
 
   /** @ngInject */
-  function dashboardMap() {
+  function dashboardPieChart() {
     return {
       restrict: 'E',
-      controller: 'DashboardMapCtrl',
-      templateUrl: 'app/pages/dashboard/dashboardMap/template.html'
+      controller: 'DashboardPieChartCtrl',
+      templateUrl: 'app/pages/dashboard/pieChart/template.html'
     };
   }
 })();
