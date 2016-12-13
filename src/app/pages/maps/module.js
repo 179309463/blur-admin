@@ -23,7 +23,7 @@
         })
         .state('maps.gmap', {
           url: '/gmap',
-          templateUrl: 'app/pages/maps/google-maps/template.html',
+          templateUrl: 'app/pages/maps/google/template.html',
           controller: 'GmapPageCtrl',
           title: 'Google Maps',
           sidebarMeta: {
@@ -41,7 +41,7 @@
         })
         .state('maps.bubble', {
           url: '/bubble',
-          templateUrl: 'app/pages/maps/map-bubbles/template.html',
+          templateUrl: 'app/pages/maps/bubble/template.html',
           controller: 'MapBubblePageCtrl',
           title: 'Bubble Maps',
           sidebarMeta: {
@@ -50,7 +50,7 @@
         })
         .state('maps.line', {
           url: '/line',
-          templateUrl: 'app/pages/maps/map-lines/template.html',
+          templateUrl: 'app/pages/maps/line/template.html',
           controller: 'MapLinesPageCtrl',
           title: 'Line Maps',
           sidebarMeta: {

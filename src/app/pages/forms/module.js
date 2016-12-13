@@ -5,14 +5,14 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.form', [])
+  angular.module('BlurAdmin.pages.forms', [])
       .config(routeConfig);
 
   /** @ngInject */
   function routeConfig($stateProvider) {
     $stateProvider
-        .state('form', {
-          url: '/form',
+        .state('forms', {
+          url: '/forms',
           template : '<ui-view></ui-view>',
           abstract: true,
           title: 'Form Elements',
@@ -21,26 +21,26 @@
             order: 250,
           },
         })
-        .state('form.inputs', {
+        .state('forms.inputs', {
           url: '/inputs',
-          templateUrl: 'app/pages/form/inputs/template.html',
+          templateUrl: 'app/pages/forms/inputs/template.html',
           title: 'Form Inputs',
           sidebarMeta: {
             order: 0,
           },
         })
-        .state('form.layouts', {
+        .state('forms.layouts', {
           url: '/layouts',
-          templateUrl: 'app/pages/form/layouts/template.html',
+          templateUrl: 'app/pages/forms/layouts/template.html',
           title: 'Form Layouts',
           sidebarMeta: {
             order: 100,
           },
         })
-        .state('form.wizard',
+        .state('forms.wizard',
         {
           url: '/wizard',
-          templateUrl: 'app/pages/form/wizard/template.html',
+          templateUrl: 'app/pages/forms/wizard/template.html',
           controller: 'WizardCtrl',
           controllerAs: 'vm',
           title: 'Form Wizard',
