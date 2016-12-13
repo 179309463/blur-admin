@@ -13,7 +13,7 @@
     var jqWindow = $(window);
     return {
       restrict: 'E',
-      templateUrl: 'app/theme/components/baSidebar/ba-sidebar.html',
+      templateUrl: 'app/theme/components/baSidebar/template.html',
       controller: 'BaSidebarCtrl',
       link: function(scope, el) {
 
